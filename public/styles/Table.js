@@ -19,7 +19,7 @@ var myList = $.getJSON(url);
  
              row$.append($('<td/>').html(cellValue));
          }
-         $("#excelDataTable").append(row$);
+         $("#jsonDataTable").append(row$);
      }
  }
  
@@ -37,7 +37,7 @@ var myList = $.getJSON(url);
              }
          }
      }
-     $("#excelDataTable").append(headerTr$);
+     $("#jsonDataTable").append(headerTr$);
  
      return columnSet;
  }
