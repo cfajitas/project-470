@@ -57,7 +57,31 @@
 
 <section id="compare">
   <div class="container">
-    <h2>Comparision goes here</h2>
+    <h2>Compare</h2>
+      <div id="Compare">
+        
+        <body>
+          <table class="table table-bordered" id="jsonDataTable2" border="1">
+            <thead>
+              <tr>
+                <th>City</th>
+                <th>NumBedRooms</th>
+                <th>NumBathrooms</th>
+                <th>Dog</th>
+                <th>Pool</th>
+                <th>FitnessCenter</th>
+                <th>Price</th>
+                <th>Deposit</th>
+                <th>SqFt</th>
+              </tr>
+            </thead>
+            <tbody id='tbody' href='#'>
+            </tbody>
+          </table>
+          <script src="styles/Table_Test.js"></script>
+        </body>
+        
+      </div>
   </div>
 </section>
 
@@ -66,14 +90,15 @@
     <h2>Data</h2>
       <div id="data">
         
-      <body onLoad="buildHtmlTable()">
-      <table class="table table-bordered" id="excelDataTable" border="1">
-      </table>
-      </body>
+        <body onLoad="buildHtmlTable()">
+          <table class="table table-bordered" id="jsonDataTable" border="1">
+          </table>
+        </body>
         
     	</div>
   </div>
 </section>
+
 
 <section id="about">
   <div class="container">
