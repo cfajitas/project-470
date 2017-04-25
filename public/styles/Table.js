@@ -7,6 +7,12 @@ var myList = $.getJSON(url);
 //            {"name" : "xyz", "hobby" : "programming"}];
 
 
+        //<body onLoad="buildHtmlTable()">
+        //  <table class="table table-bordered" id="jsonDataTable" border="1">
+        //  </table>
+        //</body>
+
+
  function buildHtmlTable() {
      var columns = addAllColumnHeaders(myList);
  
@@ -66,3 +72,6 @@ $(document).ready(function () {
             $('jsonDataTable2').append(tr);
         }
 });
+
+
+
