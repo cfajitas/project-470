@@ -1,10 +1,10 @@
 var url = 'http://localhost:8983/solr/gettingstarted/select?indent=on&q=%2BFitnessCenter:1+%2Bsfbay&wt=json';
-//var myList = $.getJSON(url);
+var myList = $.getJSON(url);
 
 
-var myList=[{"name" : "abc", "age" : 50},
-            {"age" : "25", "hobby" : "swimming"},
-            {"name" : "xyz", "hobby" : "programming"}];
+//var myList=[{"name" : "abc", "age" : 50},
+//            {"age" : "25", "hobby" : "swimming"},
+//            {"name" : "xyz", "hobby" : "programming"}];
 
 
  function buildHtmlTable() {
