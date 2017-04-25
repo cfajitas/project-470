@@ -16,8 +16,10 @@
 	<link rel="stylesheet" href="styles/project-470.css">
 	<script type="text/javascript" src="styles/project-470.js"></script>
 	
-	<script type="text/javascript" src="styles/Table.js"></script>
-	
+	<script type="text/javascript" src="styles/SFFTable.js"></script>
+	<script type="text/javascript" src="styles/SFBTable.js"></script>
+	<script type="text/javascript" src="styles/HSTTable.js"></script>
+	<script type="text/javascript" src="styles/SEATable.js"></script>
 	
 </head>
 <body>
@@ -59,28 +61,12 @@
   <div class="container">
     <h2>Compare</h2>
       <div id="Compare">
-        
-        <body>
-          <table class="table table-bordered" id="jsonDataTable2" border="1">
-            <thead>
-              <tr>
-                <th>City</th>
-                <th>NumBedRooms</th>
-                <th>NumBathrooms</th>
-                <th>Dog</th>
-                <th>Pool</th>
-                <th>FitnessCenter</th>
-                <th>Price</th>
-                <th>Deposit</th>
-                <th>SqFt</th>
-              </tr>
-            </thead>
-            <tbody id='tbody' href='#'>
-            </tbody>
-          </table>
-          <script src="styles/Table_Test.js"></script>
-        </body>
-        
+        <p>
+        <button type="button" class="btn btn-lg btn-default" id='HoustonButton' href='#' onclick="buildHtmlTableHST();">Houston List</button>
+        <button type="button" class="btn btn-lg btn-default" id='SeattleButton' href='#' onclick="buildHtmlTableSEA();">Seattle List</button>
+        <button type="button" class="btn btn-lg btn-default" id='SFBButton' href='#' onclick="buildHtmlTableSFB();">San Francisco Bay List</button>
+        <button type="button" class="btn btn-lg btn-default" id='SFFButton' href='#' onclick="buildHtmlTableSFF();">San Francisco Fitness List</button>
+        </p>
       </div>
   </div>
 </section>
@@ -89,9 +75,9 @@
   <div class="container">
     <h2>Data</h2>
       <div id="data">
-        
-        <body onLoad="buildHtmlTable()">
-          <table class="table table-bordered" id="jsonDataTable" border="1">
+          
+        <body onload="buildHtmlTableHST()">
+          <table class="table table-bordered" id="table" border="1">
           </table>
         </body>
         

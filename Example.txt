@@ -1,0 +1,15 @@
+        <body>
+          <table class="table table-bordered" id="table" border="1">
+            <tr>
+                <th>City</th>
+                <th>NumBedRooms</th>
+                <th>NumBathrooms</th>
+                <th>Dog</th>
+                <th>Pool</th>
+                <th>FitnessCenter</th>
+                <th>Price</th>
+                <th>Deposit</th>
+                <th>SqFt</th>
+            </tr>
+          </table>
+        </body>
